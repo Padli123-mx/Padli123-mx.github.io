@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations Slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="slide">
+            <div class="item" style="background-image: url();">
+                <div class="content">
+                    <div class="name">BATCH V</div>
+                    <div class="des">Anak umuran 15 tahun, suka makan rendang, tak suka perdamaian.</div>
+                    <button>See More</button>
+                </div>
+            <div class="item" style="background-image: url(kbn.jpg);">
+                <div class="content">
+                    <div class="name">BATCH V</div>
+                    <div class="des">Anak umuran 15 tahun, suka makan rendang, tak suka perdamaian.</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(walpp.png);">
+                <div class="content">
+                    <div class="name">Muhammad Padli</div>
+                    <div class="des">Anak umur 13 tahun, suka makan ayam, ga suka belajar.</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(Picture1.png);">
+                <div class="content">
+                    <div class="name">Dzicky Andrean Yowandra</div>
+                    <div class="des">Anak koncet yang suka cebok. Tiada hari kedamaian dalam mimpinya.</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(coba.png);">
+                <div class="content">
+                    <div class="name">Finland</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(arthavidya.JPG);">
+                <div class="content">
+                    <div class="name">Iceland</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url();">
+                <div class="content">
+                    <div class="name">Ireland</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url();">
+                <div class="content">
+                    <div class="name">Ireland</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(Christy\ JKT48.jpeg);">
+                <div class="content">
+                    <div class="name">Australia</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(Marsha\ Jkt48.jpeg);">
+                <div class="content">
+                    <div class="name">Netherlands</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+           
+        </div>
+
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <script>
+        let next = document.querySelector('.next')
+        let prev = document.querySelector('.prev')
+        
+        next.addEventListener('click', function(){
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').appendChild(items[0])
+        })
+        
+        prev.addEventListener('click', function(){
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+        })
+    </script>
+</body>
+</html>  

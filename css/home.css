@@ -1,0 +1,240 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+p {
+    font-family: 'comic sans ms';
+}
+
+/*Header*/
+
+
+nav .wrapper {
+    width: 100%;
+    margin: auto;
+    padding: 5px 20px 5px 20px;
+    position: relative;
+    background: rgb(186, 22, 22);
+    background:linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(238, 117, 117) 100%);
+}
+
+h1 {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.bawah h2{
+    font-size: 30px;
+    font-weight: 800;
+    float: left;
+    color: #ffffff;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #ffffff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: right;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+a.biru {
+    background: #0376f1;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 12px 20px 12px 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+a.biru:hover{
+    text-decoration: none;
+    background-color: #165398;
+}
+
+/*Apa itu BESTPROGRAM sampai ke IPB*/
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: justify;
+    padding: 0px 20px 0px 20px;
+}
+
+.kolom .deskripsi {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #364f6b;
+}
+
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    width: 100%;
+    line-height: 50px;
+    color: #364f6b;
+}
+
+img {
+    width: 500px;
+    height: 300px;
+}
+
+
+/*The Trainers*/
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.tengah .kolom {
+    text-align: center;
+}
+
+.foto-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foto-trainer {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.foto-trainer img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.foto-trainer p {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #364f6b;
+}
+
+
+/*The Sponsors*/
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.tengah .kolom {
+    text-align: center;
+}
+
+.foto-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foto-logo {
+    width: 20%;
+    margin: 0 auto; 
+}
+
+.foto-logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.foto-logo p{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 18px;
+    text-align: center;
+    color: #364f6b;
+}
+
+
+/*Contact Person & Footer*/
+#contact {
+    background-color: #dedede;
+    padding: 50px 0px 50px 0px;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.footer-section p {
+    text-align: center;
+}
+
+.footer-section h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 10px;
+}
